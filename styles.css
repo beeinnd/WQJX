@@ -1,0 +1,155 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #0047ab;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.0em;
+}
+
+main {
+    padding: 20px;
+}
+
+.overview, .investment, .stock-list, .booking {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stock-item {
+    margin-bottom: 20px;
+}
+
+.chart-container {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.booking .buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.booking a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.booking .whatsapp {
+    background-color: #25D366;
+}
+
+.booking .telegram {
+    background-color: #0088cc;
+}
+
+footer {
+    background-color: #0047ab;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* 表格样式 */
+.table-container {
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+th {
+    background-color: #0047ab;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+    th, td {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    th, td {
+        padding: 6px;
+        font-size: 10px;
+    }
+}
+
+.investment-advice, .market-trends, .customer-feedback {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.investment-advice h2, .market-trends h2, .customer-feedback h2 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+
+.investment-advice ul, .market-trends ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.investment-advice li, .market-trends li {
+    margin-bottom: 10px;
+}
+
+.customer-feedback blockquote {
+    font-style: italic;
+    margin: 20px 0;
+    border-left: 5px solid #0047ab;
+    padding-left: 15px;
+    color: #666;
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>往期精选 - 牛股展示与分析</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>往期精选</h1>
+        <p>华尔街金融股票 - 过往精选展示与投资回报分析</p>
+    </header>
+
+    <main>
+        <!-- 新增板块：视频内容 -->
+        <section class="video-section">
+            <h2>投资回报分析与策略解读</h2>
+            <p>在这里，我们将为您展示详细的投资回报分析，同时分享一些市场趋势和投资策略的解读。</p>
+            <div class="video-container">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- 综合涨幅表格 -->
+        <section class="overview">
+            <h2>近期推荐股票综合涨幅</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>股票代码</th>
+                            <th>股票名称</th>
+                            <th>买入时间</th>
+                            <th>买入价格 ($)</th>
+                            <th>当前价格 ($)</th>
+                            <th>涨幅率 (%)</th>
+                            <th>投资回报 ($)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>AAPL</td>
+                            <td>Apple Inc.</td>
+                            <td>2023-01-15</td>
+                            <td>130</td>
+                            <td>175</td>
+                            <td>+35%</td>
+                            <td>+45,000</td>
+                        </tr>
+                        <tr>
+                            <td>TSLA</td>
+                            <td>Tesla Inc.</td>
+                            <td>2023-03-10</td>
+                            <td>200</td>
+                            <td>300</td>
+                            <td>+50%</td>
+                            <td>+50,000</td>
+                        </tr>
+                        <tr>
+                            <td>GOOGL</td>
+                            <td>Alphabet Inc.</td>
+                            <td>2023-02-01</td>
+                            <td>2200</td>
+                            <td>2640</td>
+                            <td>+20%</td>
+                            <td>+44,000</td>
+                        </tr>
+                        <tr>
+                            <td>AMZN</td>
+                            <td>Amazon.com Inc.</td>
+                            <td>2023-04-05</td>
+                            <td>3200</td>
+                            <td>4480</td>
+                            <td>+40%</td>
+                            <td>+128,000</td>
+                        </tr>
+                        <tr>
+                            <td>MSFT</td>
+                            <td>Microsoft Corp.</td>
+                            <td>2023-01-20</td>
+                            <td>250</td>
+                            <td>325</td>
+                            <td>+30%</td>
+                            <td>+75,000</td>
+                        </tr>
+                        <tr>
+                            <td>NVDA</td>
+                            <td>NVIDIA Corp.</td>
+                            <td>2023-03-15</td>
+                            <td>180</td>
+                            <td>288</td>
+                            <td>+60%</td>
+                            <td>+108,000</td>
+                        </tr>
+                        <tr>
+                            <td>FB</td>
+                            <td>Meta Platforms Inc.</td>
+                            <td>2023-02-10</td>
+                            <td>280</td>
+                            <td>350</td>
+                            <td>+25%</td>
+                            <td>+70,000</td>
+                        </tr>
+                        <tr>
+                            <td>NFLX</td>
+                            <td>Netflix Inc.</td>
+                            <td>2023-05-01</td>
+                            <td>500</td>
+                            <td>725</td>
+                            <td>+45%</td>
+                            <td>+225,000</td>
+                        </tr>
+                        <tr>
+                            <td>TSM</td>
+                            <td>Taiwan Semiconductor</td>
+                            <td>2023-01-25</td>
+                            <td>100</td>
+                            <td>115</td>
+                            <td>+15%</td>
+                            <td>+15,000</td>
+                        </tr>
+                        <tr>
+                            <td>BABA</td>
+                            <td>Alibaba Group</td>
+                            <td>2023-03-20</td>
+                            <td>200</td>
+                            <td>220</td>
+                            <td>+10%</td>
+                            <td>+20,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 其他内容保持不变 -->
+        <section class="investment">
+            <h2>投资回报率</h2>
+            <p>假设您在账户中投入了 $100,000，分别买入我们推荐的股票，以下是您的投资回报：</p>
+            <div class="chart-container">
+                <canvas id="investmentChart"></canvas>
+            </div>
+        </section>
+
+        <section class="stock-list">
+            <h2>往期牛股详情</h2>
+            <div class="stock-item">
+                <h3>AAPL - Apple Inc.</h3>
+                <p>买入时间: 2023-01-15</p>
+                <p>涨幅: +35%</p>
+                <div class="chart-container">
+                    <canvas id="aaplChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="aaplReturnChart"></canvas>
+                </div>
+            </div>
+            <div class="stock-item">
+                <h3>TSLA - Tesla Inc.</h3>
+                <p>买入时间: 2023-03-10</p>
+                <p>涨幅: +50%</p>
+                <div class="chart-container">
+                    <canvas id="tslaChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="tslaReturnChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section class="booking">
+            <h2>预约牛股</h2>
+            <p>立即预约，获取最新内部投资建议！</p>
+            <div class="buttons">
+                <a href="https://wa.me/1234567890" class="whatsapp" target="_blank">WhatsApp 预约</a>
+                <a href="https://t.me/yourusername" class="telegram" target="_blank">Telegram 预约</a>
+            </div>
+        </section>
+        <!-- Overview Section -->
+<section class="overview">
+  <h2>平台概况</h2>
+  <p>我们提供全面的投资服务，包括股票分析、回报预测、市场趋势分析等。</p>
+</section>
+
+<!-- New Section: Investment Advice -->
+<section class="investment-advice">
+  <h2>投资建议</h2>
+  <p>我们为您提供个性化的投资建议，帮助您做出明智决策。</p>
+  <ul>
+    <li><strong>多元化投资：</strong>分散风险，投资不同领域。</li>
+    <li><strong>定期评估：</strong>定期调整投资组合，确保稳定回报。</li>
+    <li><strong>长线投资：</strong>坚持长期投资策略，享受复利效应。</li>
+  </ul>
+</section>
+
+<!-- New Section: Market Trends -->
+<section class="market-trends">
+  <h2>市场动态</h2>
+  <p>市场趋势正在发生变化，以下是当前的市场热点。</p>
+  <ul>
+    <li><strong>新能源板块：</strong>随着环保政策的推动，新能源行业的股票表现强劲。</li>
+    <li><strong>人工智能：</strong>AI 技术的发展，带动了相关企业的股票价格上涨。</li>
+    <li><strong>美联储政策：</strong>美联储的利率调整将影响全球金融市场。</li>
+  </ul>
+</section>
+
+<!-- New Section: Customer Feedback -->
+<section class="customer-feedback">
+  <h2>客户评价</h2>
+  <blockquote>
+    <p>"通过这个平台，我的投资回报率稳步提升，特别感谢他们的股票分析。" - John D.</p>
+  </blockquote>
+  <blockquote>
+    <p>"专业的团队，总是能给出正确的投资建议。我现在对市场更有信心了！" - Sarah T.</p>
+  </blockquote>
+</section>
+
+<!-- Booking Section -->
+<section class="booking">
+  <h2>预约咨询</h2>
+  <p>立即预约我们的团队，为您提供专业投资建议。</p>
+  <div class="buttons">
+    <a href="https://wa.me/15555555555" class="whatsapp" target="_blank">WhatsApp 预约</a>
+    <a href="https://t.me/username" class="telegram" target="_blank">Telegram 预约</a>
+  </div>
+</section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 往期精选. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
